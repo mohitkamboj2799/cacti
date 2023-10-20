@@ -78,9 +78,7 @@ chown root:root /usr/local/spine/bin/spine
 chmod u+s /usr/local/spine/bin/spine
 cd ..
 
-else
-echo "spine dependecies  will not be installed"
-fi                                                       
+                                                    
 
 
 ###Find installed version of PHP
