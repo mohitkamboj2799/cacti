@@ -503,29 +503,3 @@ systemctl start cron
 
 
 
-#####Menu 
-
-
-
-
-choice='Select a operation: '
-options=("New-installation" "spine-only-installation" "cacti-upgrade" "Quit")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "New-installation")
-            new_install
-            ;;
-        "spine-only-installation")
-            spine_install
-            ;;
-        "cacti-upgrade")
-            cacti_upgrade
-            ;;
-        "Quit")
-            break
-            ;;
-        *) echo invalid option;;
-    esac
-done
-
